@@ -1,0 +1,59 @@
+<div class="div-card" *ngIf="imageInput">
+    <mat-card fxLayout fxLayoutGap="20px">
+        <span fxFlex="1 1 50%">
+            <mat-card-header>
+                <mat-card-title>{{imageInput.user_name}}</mat-card-title>
+            </mat-card-header>
+
+            <mat-card-content>
+                <img class="messageImage" [src]="loadedImage" />
+            </mat-card-content>
+        </span>
+        <span fxFlex="1 1 50%">
+            <mat-card-actions>
+                <form [formGroup]="messagesForm" (ngSubmit)="addMessage()">
+                    <div>
+                        <mat-form-field>
+                            <mat-label for="username">Username: </mat-label>
+                            <input matInput type="text" formControlName="username" />
+                        </mat-form-field>
+                    </div>
+                    <div class="break"></div>
+                    <div>
+                        <mat-form-field>
+                            <mat-label for="message">Message: </mat-label>
+                            <textarea matInput rows="10" cols="50" formControlName="message"></textarea>
+                        </mat-form-field>
+                    </div>
+
+                    <div class="break"></div>
+                    <div>
+                        <button mat-raised-button color="primary" type="submit">SEND</button>
+                    </div>
+                </form>
+                
+                <form [formGroup]="messagesForm" (ngSubmit)="deleteMessage()">
+                    <div>
+                        <button mat-raised-button color="primary" type="submit">Delete</button>
+                    </div>
+                </form>
+            </mat-card-actions>
+        </span>
+
+    </mat-card>
+    <div *ngIf="messages.length">
+        <table>
+            <tr>
+                <th>User</th>
+                <th>Comment</th>
+                <th>Date</th>
+            </tr>
+            <tr *ngFor="let comment of messages; let i = index;"
+                [ngStyle]="{'background-color' : 'grey'}">
+                <td>{{comment.username}}</td>
+                <td>{{comment.message}}</td>
+                <td>{{comment.date | dateFormat}}</td>
+            </tr>
+        </table>
+    </div>
+</div>

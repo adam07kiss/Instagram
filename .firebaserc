@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "instagram-2f040": {
+      "hosting": {
+        "instagram": [
+          "instagram-2f040"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "instagram-2f040"
+  }
+}

@@ -1,0 +1,7 @@
+<div class="imageList">
+    <mat-form-field appearance="fill">
+        <mat-select (selectionChange)="reload()" [(ngModel)]="chosenImage">
+            <mat-option *ngFor="let obj of messageObjectInput" [value]="obj">{{obj.user_name}}</mat-option>
+        </mat-select>
+    </mat-form-field>
+</div>

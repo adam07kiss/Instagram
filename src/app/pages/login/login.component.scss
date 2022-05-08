@@ -1,0 +1,75 @@
+div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+}
+
+.main_component {
+    height: 100vh;
+    align-items: center;
+}
+
+span {
+    padding: 5px 5px 5px 5px;
+}
+
+mat-form-field {
+    width: 300px;
+}
+
+.top {
+    margin-top: 25px;
+    width: 300px;
+}
+
+.signup{
+    margin-left: 40px;
+    font-size: 15px;
+    color: blue;
+}
+
+
+
+.s311c {
+    background-color: #dbdbdb;
+    background-color: rgba(var(--b38,219,219,219),1);
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -webkit-flex-shrink: 1;
+    -ms-flex-negative: 1;
+    flex-shrink: 1;
+    height: 1px;
+    width: 100px;
+    position: relative;
+    top: .45em;
+    margin-top: 75px;
+}
+
+._0tv-g {
+    color: #8e8e8e;
+    color: rgba(var(--f52,142,142,142),1);
+    -webkit-box-flex: 0;
+    -webkit-flex-grow: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 15px;
+    margin: 0 18px;
+    text-transform: uppercase;
+}
+
+.K-1uj {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}

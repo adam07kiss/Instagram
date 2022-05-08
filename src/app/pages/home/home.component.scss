@@ -1,0 +1,59 @@
+mat-card {
+    margin-top: 25px;
+    width: 50%;
+    height: 80%;
+    align-self: center;
+    display: flex;
+}
+
+mat-card-header {
+    display: flex;
+}
+mat-card-content{
+    width: 100%;
+    
+}
+
+.username {
+    margin-left: 5px;
+    margin-top: 15px;
+    font-size: large;
+}
+.post{
+    text-align: center;
+}
+
+a {
+    font-size: large;
+}
+
+.icons{
+    margin-left: 25px;
+    padding-left: 10px;
+}
+
+.pics {
+    border: 2px black;
+    margin: 5px;
+    width: 450px;
+    height: 400px;
+}
+
+.div-flex {
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    // text-align: center;
+    height: 80%;
+}
+
+.main_component {
+    height: 100vh;
+}
+
+.profile {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    // margin-left: 300;
+}
